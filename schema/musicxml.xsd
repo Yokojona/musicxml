@@ -5850,7 +5850,7 @@ The credit-type element indicates the purpose behind a credit. Multiple types of
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="credit-type" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="link" type="link" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="credit-link" type="link" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="bookmark" type="bookmark" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:choice>
 				<xs:element name="credit-image" type="image"/>
@@ -5860,7 +5860,7 @@ The credit-type element indicates the purpose behind a credit. Multiple types of
 						<xs:element name="credit-symbol" type="formatted-symbol-id"/>
 					</xs:choice>
 					<xs:sequence minOccurs="0" maxOccurs="unbounded">
-						<xs:element name="link" type="link" minOccurs="0" maxOccurs="unbounded"/>
+						<xs:element name="credit-inner-link" type="link" minOccurs="0" maxOccurs="unbounded"/>
 						<xs:element name="bookmark" type="bookmark" minOccurs="0" maxOccurs="unbounded"/>
 						<xs:choice>
 							<xs:element name="credit-words" type="formatted-text-id"/>
@@ -6543,7 +6543,7 @@ In most cases the duration will be the same as the preceding note. However it ca
 				<xs:element name="listening" type="listening"/>
 				<xs:element name="barline" type="barline"/>
 				<xs:element name="grouping" type="grouping"/>
-				<xs:element name="link" type="link"/>
+				<xs:element name="music-data-link" type="link"/>
 				<xs:element name="bookmark" type="bookmark"/>
 			</xs:choice>
 		</xs:sequence>
