@@ -3246,7 +3246,7 @@ Barlines have a location attribute to make it easier to process barlines indepen
 			<xs:element name="bar-style" type="bar-style-color" minOccurs="0"/>
 			<xs:group ref="editorial"/>
 			<xs:element name="wavy-line" type="wavy-line" minOccurs="0"/>
-			<xs:element name="segno" type="segno" minOccurs="0"/>
+			<xs:element name="barline-segno" type="segno" minOccurs="0"/>
 			<xs:element name="coda" type="coda" minOccurs="0"/>
 			<xs:element name="fermata" type="fermata" minOccurs="0" maxOccurs="2"/>
 			<xs:element name="ending" type="ending" minOccurs="0"/>
@@ -3503,7 +3503,7 @@ By default, a series of direction-type elements and a series of child elements o
 					<xs:documentation>The rehearsal element specifies letters, numbers, and section names that are notated in the score for reference during rehearsal. The enclosure is square if not specified. The language is Italian ("it") if not specified. Left justification is used if not specified.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="segno" type="segno" maxOccurs="unbounded"/>
+			<xs:element name="direction-type-segno" type="segno" maxOccurs="unbounded"/>
 			<xs:element name="coda" type="coda" maxOccurs="unbounded"/>
 			<xs:choice maxOccurs="unbounded">
 				<xs:element name="words" type="formatted-text-id">
